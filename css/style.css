@@ -352,41 +352,41 @@ input[type="password"]:focus {
    ========================================= */
 .pin-input-group {
     display: flex;
-    gap: 12px;
-    justify-content: center;
+    gap: 16px;
+    width: 100%;
     margin: 28px 0 32px;
+    justify-content: space-between;
 }
 
 .pin-input-group input[type="text"] {
-    width: 52px;
-    height: 60px;
-    border: 2px solid #ddd;
-    border-radius: 12px;
-    background-color: #fff;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    font-family: 'Roboto', sans-serif;
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #d0d0d0;
     outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 4px 0 8px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
+    transition: border-color 0.2s ease;
     caret-color: #2948FF;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-.pin-input-group input[type="text"]::placeholder {
-    color: #ccc;
-    font-weight: 400;
 }
 
 .pin-input-group input[type="text"]:focus {
-    border-color: #2948FF;
-    box-shadow: 0 0 0 3px rgba(41, 72, 255, 0.12);
-    transform: translateY(-2px);
+    border-bottom: 2px solid #2948FF;
+    outline: none;
+    box-shadow: none;
 }
 
-.pin-input-group input[type="text"].filled {
-    border-color: #2948FF;
-    background-color: #f0f3ff;
+.pin-input-group input[type="text"]:not(:placeholder-shown) {
+    border-bottom: 2px solid #2948FF;
+}
+
+.pin-input-group input[type="text"]::placeholder {
+    color: transparent;
 }
