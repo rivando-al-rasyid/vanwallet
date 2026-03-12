@@ -4,109 +4,210 @@
     margin: 0;
 }
 
-
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: blue;
-    color: #333;
+    background-color: #2948FF;
     line-height: 1.6;
 }
 
 .brand {
-  color:#2948FF;
-  padding: 0%;
-  margin: 0%;
-
+    color: #2948FF;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
+.center {
+    text-align: center;
+}
+form {
+  background-color: #fff;
+}
 .divider {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #888;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    margin: 20px 0;
 }
 
 .divider::before,
 .divider::after {
-  content: '';
-  flex: 1;
-  border-bottom: 1px solid #ccc;
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
 }
 
-.divider:not(:empty)::before {
-  margin-right: .5em;
-}
-
-.divider:not(:empty)::after {
-  margin-left: .5em;
-}
+.divider:not(:empty)::before { margin-right: .5em; }
+.divider:not(:empty)::after  { margin-left:  .5em; }
 
 /* Layout Container */
 .login-wrapper {
     display: flex;
     min-height: 100vh;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
 }
 
-/* Split Screen Logic */
+/* Hide aside on mobile, show on desktop */
 .login-bg {
-    flex: 1;
-    /* Image is now first (top), Gradient is second (bottom) */
-    background:
-        url('../asset/image.png'),
-        radial-gradient(50% 50% at 50% 50%, rgba(56, 104, 253, 0.87) 0%, rgba(123, 155, 255, 0) 100%);
-
-    /* Order matters here too: 90% for the image, auto for the gradient */
-    background-size: 70%, cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    /* Ensuring the container is visible for testing */
-    display: block;
+    display: none;
 }
 
-.login-content {
-          border-radius: 0 40px 40px 0;
-        background-color: white;
+.brand img{
+  padding-right: 10px;
+}
+@media (min-width: 992px) {
+    .login-bg {
+        display: block;
+        flex: 0 0 50%;
+        background:
+            url('../assets/image.png'),
+            radial-gradient(50% 50% at 50% 50%, rgba(56, 104, 253, 0.87) 0%, rgba(123, 155, 255, 0) 100%);
+        background-size: 70%, 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
-    flex: 1;
+    .login-wrapper {
+        align-items: stretch;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .login-content {
+        border-radius:  0 40px 40px 0  ;
+        box-shadow: none;
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 48px;
+    }
+}
+
+/* Card — mobile */
+.login-content {
+    background-color: #fff;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 440px;
+    padding: 48px 40px;
+}
+
+/* Card — desktop override */
+@media (min-width: 992px) {
+    .login-content {
+        border-radius:  0 40px 40px 0 ;
+        box-shadow: none;
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 48px;
+    }
+
+    .login-container {
+        max-width: 30vp;
+        width: 100%;
+    }
+}
+
+.login-container {
+    width: 100%;
+}
+
+/* Header */
+header {
+    margin-bottom: 28px;
+}
+
+header strong {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 6px 0 10px;
+    line-height: 1.4;
+}
+
+header p {
+    color: #888;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+header p.brand {
+    color: #2948FF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+/* Social Buttons */
+.social-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.btn-social {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
-}
-
-/* Form Styles */
-.login-container {
-    max-width: 400px;
+    gap: 12px;
     width: 100%;
-
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 }
 
-h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.btn-social svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
 }
 
-h3 strong {
-    color: #2948FF; /* Example brand color */
+.btn-social:hover {
+    background: #f7f8ff;
+    box-shadow: 0 4px 12px rgba(41, 72, 255, 0.1);
+    transform: translateY(-1px);
+    border-color: #c5ccff;
 }
 
+.btn-social:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
 
-
-p {
-    margin-bottom: 30px;
-    color: #777;
+/* Form */
+.login-form {
+    margin-top: 8px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: 400;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #444;
 }
 
 input[type="email"],
@@ -114,28 +215,23 @@ input[type="password"] {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
 }
 
-/* Options Row */
-.form-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    font-size: 0.9rem;
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2948FF;
+    box-shadow: 0 0 0 3px rgba(41, 72, 255, 0.1);
 }
 
-.login-button {
-    text-decoration: none;
-    color: #2948FF;
-}
-
-/* Button */
+/* Submit Button */
 .btn-login {
     width: 100%;
-    padding: 15px;
+    padding: 14px;
     background-color: #2948FF;
     border: none;
     color: #fff;
@@ -143,18 +239,81 @@ input[type="password"] {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    margin-bottom: 16px;
+    transition: background 0.3s ease, transform 0.15s ease;
 }
-
-
 
 .btn-login:hover {
-    background-color: #294fFF;
+    background-color: #1a35e0;
+    transform: translateY(-1px);
 }
 
-/* Responsive Desktop view */
-@media (min-width: 992px) {
-    .login-bg {
-        display: block; /* Shows background on larger screens */
-    }
+.btn-login:active {
+    transform: translateY(0);
+}
+
+.center {
+    font-size: 0.875rem;
+    color: #888;
+    margin-top: 4px;
+}
+
+.center .brand {
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.login-button {
+    text-decoration: none;
+    color: #2948FF;
+}
+
+/* Input Email dengan Ikon Kiri */
+input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Sesuaikan ketebalan agar tidak terlalu kaku */
+    border-radius: 8px;
+    font-size: 16px;
+    color: #000;
+
+    /* Ikon Email di Kiri */
+    background-image: url('../assets/email.png');
+    background-position: 12px center; /* 12px dari kiri, tengah secara vertikal */
+    background-repeat: no-repeat;
+    background-size: 20px; /* Sesuaikan ukuran ikon */
+
+    padding: 12px 20px 12px 42px; /* Padding kiri lebih besar (42px) agar teks tidak menabrak ikon */
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+/* Input Password dengan Ikon Kiri (Kunci) dan Kanan (Mata) */
+input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #000;
+
+    /* MULTIPLE BACKGROUNDS: Kunci (kiri) dan Mata (kanan) */
+    background-image: url('../assets/kunci.png'), url('../assets/mata.png');
+    background-position: 12px center, calc(100% - 12px) center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20px, 20px;
+
+    /* Padding: Atas Kanan Bawah Kiri */
+    /* Padding kiri (42px) untuk ikon kunci, Padding kanan (42px) untuk ikon mata */
+    padding: 12px 42px 12px 42px;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+/* Tambahkan efek fokus agar konsisten */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2948FF;
+    box-shadow: 0 0 0 3px rgba(41, 72, 255, 0.1);
 }
