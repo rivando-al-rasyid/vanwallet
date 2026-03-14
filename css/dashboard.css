@@ -554,6 +554,10 @@ textarea:focus {
 .modal-success-heading span {
   color: var(--green);
 }
+.modal-failed-heading span {
+  color: var(--red);
+}
+
 
 .modal-success-sub {
   font-size: 13px;
