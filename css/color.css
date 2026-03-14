@@ -1,0 +1,90 @@
+/* =========================================
+   COLOR TOKENS — Single source of truth
+   Import this file first in every page.
+   ========================================= */
+:root {
+
+    /* ── Brand / Primary ── */
+    --color-primary:            #2948FF;
+    --color-primary-dark:       #1a35e0;
+    --color-primary-light:      #f7f8ff;
+    --color-primary-border:     #c5ccff;
+    --color-primary-glow:       rgba(41, 72, 255, 0.10);
+    --color-primary-shadow:     rgba(41, 72, 255, 0.12);
+
+    /* ── Blue variants (landing / home) ── */
+    --color-blue-gradient-start:    #396AFC;
+    --color-blue-gradient-end:      #2948FF;
+    --color-blue-light:             #3969FD;
+    --color-bg-gradient:            rgba(56, 104, 253, 0.87);
+    --color-bg-gradient-end:        rgba(123, 155, 255, 0);
+
+    /* ── Semantic UI ── */
+    --color-success:            #1EC15F;
+    --color-success-badge:      #00A700;
+    --color-danger:             #D00000;
+    --color-orange:             #FF8906;
+
+    /* ── Neutrals ── */
+    --color-white:              #FFFFFF;
+    --color-black:              #000000;
+    --color-dark:               #0B132A;
+    --color-text-body:          #333333;
+    --color-text-heading:       #1a1a1a;
+    --color-text-label:         #444444;
+    --color-text-muted:         #888888;
+    --color-gray:               #4F5665;
+    --color-light-gray:         #E8E8E8;
+    --color-border:             #DEDEDE;
+    --color-border-input:       #dddddd;
+    --color-border-divider:     #cccccc;
+    --color-border-pin:         #d0d0d0;
+
+    /* ── Backgrounds ── */
+    --color-bg-page:            #F7F8FC;
+    --color-bg-card:            rgba(232, 232, 232, 0.30);
+    --color-bg-input:           #FCFDFE;
+    --color-bg-filter:          #F1F1F1;
+    --color-bg-filter-hover:    #e4e4e4;
+    --color-bg-dropdown:        #1d1f24;
+    --color-bg-dropdown-item:   #2f3238;
+
+    /* ── Danger / Logout states ── */
+    --color-danger-bg:          #fff0f0;
+    --color-danger-border:      #fecaca;
+    --color-logout-bg:          #fff5f5;
+
+    /* ── Hover / Accent ── */
+    --color-nav-hover-bg:       #f0f3ff;
+    --color-dropdown-hover-bg:  #f5f7ff;
+    --color-tx-separator:       #F5F5F5;
+
+    /* ── Avatar gradients ── */
+    --color-av-purple-start:    #7c3aed;
+    --color-av-purple-end:      #a78bfa;
+    --color-av-blue-start:      #2948FF;
+    --color-av-blue-end:        #6b8cff;
+    --color-av-teal-start:      #0d9488;
+    --color-av-teal-end:        #2dd4bf;
+    --color-av-orange-start:    #f97316;
+    --color-av-orange-end:      #fb923c;
+    --color-av-pink-start:      #db2777;
+    --color-av-pink-end:        #f472b6;
+    --color-av-green-start:     #16a34a;
+    --color-av-green-end:       #4ade80;
+    --color-av-indigo-start:    #4338ca;
+    --color-av-indigo-end:      #818cf8;
+    --color-av-red-start:       #dc2626;
+    --color-av-red-end:         #f87171;
+    --color-av-header-start:    #667eea;
+    --color-av-header-end:      #764ba2;
+
+    /* ── Shadows / Filters ── */
+    --shadow-card:              drop-shadow(0px -8px 30px rgba(0, 0, 0, 0.35));
+    --shadow-dropdown:          0 8px 28px rgba(0, 0, 0, 0.10);
+    --shadow-reset-card:        0 8px 40px rgba(41, 72, 255, 0.12);
+
+    /* ── Misc ── */
+    --color-footer-contact-text:    #EFEFEF;
+    --color-brand-alt-text:         #3A3D42;
+}
