@@ -129,202 +129,61 @@
   </nav>
 
   <!-- MAIN -->
-  <main>
-    <div class="left-col">
-
-      <!-- STAT CARDS -->
-      <div class="stat-cards">
-
-        <div class="stat-card">
-          <div class="stat-label">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#2948FF" stroke-width="2">
-              <rect x="2" y="7" width="20" height="14" rx="2"/>
-              <path d="M16 7V5a2 2 0 00-4 0v2"/>
-              <line x1="12" y1="12" x2="12" y2="16"/>
-            </svg>
-            Saldo
-          </div>
-          <div class="stat-value">Rp 2.400.000</div>
-          <div class="stat-badge up">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M2 10L7 4L12 10" stroke="#00A700" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            +2% · 3 Hari Lalu
-          </div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-label">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#2948FF" stroke-width="2">
-              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
-            </svg>
-            Pemasukan
-          </div>
-          <div class="stat-value">Rp 1.200.000</div>
-          <div class="stat-badge up">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M2 10L7 4L12 10" stroke="#00A700" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            +11.01%
-          </div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-label">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#2948FF" stroke-width="2">
-              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
-            </svg>
-            Pengeluaran
-          </div>
-          <div class="stat-value">Rp 800.000</div>
-          <div class="stat-badge down">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M2 4L7 10L12 4" stroke="#D00000" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            -5.06%
-          </div>
-        </div>
-
-      </div>
-
-      <!-- ACTION BAR -->
-      <div class="action-bar">
-        <span class="action-bar-title">Transaksi</span>
-        <div class="action-btns">
-          <button class="btn btn-primary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-              <line x1="12" y1="5" x2="12" y2="19"/>
-              <line x1="5" y1="12" x2="19" y2="12"/>
-            </svg>
-            Isi Saldo
-          </button>
-          <button class="btn btn-primary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-              <path d="M22 2L11 13"/>
-              <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
-            </svg>
-            Kirim
-          </button>
-        </div>
-      </div>
-
-      <!-- CHART -->
-      <div class="chart-section">
-        <div class="chart-header">
-          <span class="chart-title">Grafik Transaksi</span>
-          <div class="chart-filters">
-            <button class="filter-btn">
-              7 Hari
-              <svg viewBox="0 0 12 8" fill="none">
-                <path d="M1 1L6 7L11 1" stroke="#0B132A" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </button>
-            <button class="filter-btn">
-              Pemasukan
-              <svg viewBox="0 0 12 8" fill="none">
-                <path d="M1 1L6 7L11 1" stroke="#0B132A" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div>
-          <canvas id="myChart"></canvas>
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT SIDEBAR -->
-    <div class="right-sidebar">
-      <div class="sidebar-title">Transaksi Terbaru</div>
-      <div class="transaction-list">
-
-        <div class="transaction-item">
-          <div class="tx-avatar av-purple">RF</div>
-          <div class="tx-info">
-            <div class="tx-name">Robert Fox</div>
-            <div class="tx-type">Transfer</div>
-          </div>
-          <div class="tx-amount income">+Rp50.000</div>
-        </div>
-
-        <div class="transaction-item">
-          <div class="tx-avatar av-blue">FM</div>
-          <div class="tx-info">
-            <div class="tx-name">Floyd Miles</div>
-            <div class="tx-type">Kirim</div>
-          </div>
-          <div class="tx-amount expense">-Rp50.000</div>
-        </div>
-
-        <div class="transaction-item">
-          <div class="tx-avatar av-teal">UJ</div>
-          <div class="tx-info">
-            <div class="tx-name">Ujang</div>
-            <div class="tx-type">Kirim</div>
-          </div>
-          <div class="tx-amount expense">-Rp50.000</div>
-        </div>
-
-        <div class="transaction-item">
-          <div class="tx-avatar av-orange">RL</div>
-          <div class="tx-info">
-            <div class="tx-name">Raulemons</div>
-            <div class="tx-type">Transfer</div>
-          </div>
-          <div class="tx-amount income">+Rp50.000</div>
-        </div>
-
-        <div class="transaction-item">
-          <div class="tx-avatar av-pink">RV</div>
-          <div class="tx-info">
-            <div class="tx-name">Reiva</div>
-            <div class="tx-type">Transfer</div>
-          </div>
-          <div class="tx-amount income">+Rp50.000</div>
-        </div>
-
-        <div class="transaction-item">
-          <div class="tx-avatar av-green">TB</div>
-          <div class="tx-info">
-            <div class="tx-name">Thobie</div>
-            <div class="tx-type">Kirim</div>
-          </div>
-          <div class="tx-amount expense">-Rp50.000</div>
-        </div>
-
-        <div class="transaction-item">
-          <div class="tx-avatar av-indigo">BZ</div>
-          <div class="tx-info">
-            <div class="tx-name">Buzjany</div>
-            <div class="tx-type">Transfer</div>
-          </div>
-          <div class="tx-amount income">+Rp50.000</div>
-        </div>
-
-        <div class="transaction-item">
-          <div class="tx-avatar av-red">AD</div>
-          <div class="tx-info">
-            <div class="tx-name">Adisurya</div>
-            <div class="tx-type">Kirim</div>
-          </div>
-          <div class="tx-amount expense">-Rp50.000</div>
-        </div>
-
-        <div class="transaction-item">
-          <div class="tx-avatar av-amber">MG</div>
-          <div class="tx-info">
-            <div class="tx-name">Miguelle</div>
-            <div class="tx-type">Transfer</div>
-          </div>
-          <div class="tx-amount income">+Rp50.000</div>
-        </div>
-
-      </div>
-    </div>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<main>
+  <table class='usertable'>
+    <tbody>
+      <tr>
+        <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+        <td>User_01</td>
+        <td>0800-0000-0001</td>
+        <td>⭐</td>
+      </tr>
+      <tr>
+        <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+        <td>User_02</td>
+        <td>0800-0000-0002</td>
+        <td>⭐</td>
+      </tr>
+      <tr>
+        <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+        <td>User_03</td>
+        <td>0800-0000-0003</td>
+        <td>⭐</td>
+      </tr>
+      <tr>
+        <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+        <td>User_04</td>
+        <td>0800-0000-0004</td>
+        <td>⭐</td>
+      </tr>
+      <tr>
+        <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+        <td>User_05</td>
+        <td>0800-0000-0005</td>
+        <td>⭐</td>
+      </tr>
+      <tr>
+        <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+        <td>User_06</td>
+        <td>0800-0000-0006</td>
+        <td>⭐</td>
+      </tr>
+      <tr>
+        <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+        <td>User_07</td>
+        <td>0800-0000-0007</td>
+        <td>⭐</td>
+      </tr>
+      <tr>
+        <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+        <td>User_08</td>
+        <td>0800-0000-0008</td>
+        <td>⭐</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 
   <script>
     function toggleUserDropdown() {

@@ -712,3 +712,16 @@ input[type="checkbox"]:focus + label {
     }
 
     .logout-confirm-btn:hover { opacity: 0.85; }
+
+
+    usertable{
+      tr{
+        &:nth-child(odd){
+          color: var(--gray);
+        }
+      }
+      td{
+        vertical-align: middle;
+        text-align: center;
+      }
+    }
