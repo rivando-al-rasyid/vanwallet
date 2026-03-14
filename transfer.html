@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-Wallet Dashboard</title>
+  <title>E-Wallet — Find People</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
   <link href="css/dashboard.css" rel="stylesheet">
 </head>
 <body>
-
+Riwayat
+  <!-- HEADER -->
   <header>
     <a class="logo" href="#">
       <div class="logo-icon">
@@ -25,7 +26,7 @@
       <div class="user-dropdown" id="userDropdown">
         <div class="user-dropdown-trigger">
           <div class="avatar">BS</div>
-          <div class="chevron-down" id="userChevron">
+          <div class="chevron-down">
             <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
               <path d="M1 1L7 7L13 1" stroke="#4F5665" stroke-width="2" stroke-linecap="round"/>
             </svg>
@@ -52,9 +53,10 @@
     </div>
   </header>
 
+  <!-- SIDENAV -->
   <nav class="sidenav">
     <div class="sidenav-items">
-      <a class="nav-item active" href="#">
+      <a class="nav-item" href="index.html">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="3" y="3" width="7" height="7" rx="1"/>
           <rect x="14" y="3" width="7" height="7" rx="1"/>
@@ -63,7 +65,7 @@
         </svg>
         Dashboard
       </a>
-      <a class="nav-item" href="#">
+      <a class="nav-item active" href="#">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M22 2L11 13"/>
           <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
@@ -95,7 +97,7 @@
         Pengguna
       </a>
     </div>
-    <div class="nav-logout-wrapper">
+    <div>
       <div class="nav-logout">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/>
@@ -107,15 +109,24 @@
     </div>
   </nav>
 
+  <!-- MAIN -->
   <main>
-    <section>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 2L11 13"/>
+        <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+      </svg>
+      <span class="page-title">Transfer Money</span>
+    </div>
       <div class="stepper">
-        <div class="step">
+        <div class="step step--active">
           <div class="step__circle">1</div>
           Find People
         </div>
         <div class="step__divider"></div>
-        <div class="step step--active">
+        <div class="step">
           <div class="step__circle">2</div>
           Set Nominal
         </div>
@@ -126,48 +137,88 @@
         </div>
       </div>
 
-      <p class="section-title">People Information</p>
-      <div class="people-card">
-        <div class="people-info">
-          <div class="avatar">G</div>
-          <div>
-            <div class="people-name">Ghaluh 1</div>
-            <div class="people-phone">(239) 555-0108</div>
-            <span class="badge">
-              <span class="badge__dot"></span>
-              Verified
-            </span>
-          </div>
-        </div>
-        <button class="star-btn" title="Add to favorites" aria-label="Favorite">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-        </button>
-      </div>
+    <div class="find-people-section">
 
-      <div class="field-block">
-        <p class="field-label">Amount</p>
-        <p class="field-sub">Type the amount you want to transfer and then press continue to the next steps.</p>
-        <div class="input-wrap">
-          <span class="input-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="5" width="20" height="14" rx="2"/>
-              <line x1="2" y1="10" x2="22" y2="10"/>
+      <!-- Stepper -->
+
+      <!-- Header Row -->
+      <div class="find-people-header">
+        <div>
+          <div class="find-people-title">Find People</div>
+          <div class="find-people-count">15 Results Found</div>
+        </div>
+        <div class="search-wrap">
+          <input type="text" class="search-input" placeholder="Enter Number Or Full Name">
+          <span class="search-icon-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
             </svg>
           </span>
-          <input type="number" placeholder="Enter Nominal Transfer" min="0" />
         </div>
       </div>
 
-      <div class="field-block">
-        <p class="field-label">Notes</p>
-        <p class="field-sub">You can add some notes for this transfer such as payment coffee or something</p>
-        <textarea placeholder="Enter Some Notes"></textarea>
-      </div>
+      <!-- People Table -->
+      <table class="people-table">
+        <tbody>
+          <tr>
+            <td><img src="https://i.pravatar.cc/150?u=1" class="pt-avatar" alt="avatar"></td>
+            <td class="pt-name">Ghaluh 1</td>
+            <td class="pt-phone">(239) 555-0108</td>
+            <td class="pt-star">☆</td>
+          </tr>
+          <tr>
+            <td><img src="https://i.pravatar.cc/150?u=2" class="pt-avatar" alt="avatar"></td>
+            <td class="pt-name">Aditya Pratama</td>
+            <td class="pt-phone">(021) 555-0192</td>
+            <td class="pt-star active">★</td>
+          </tr>
+          <tr>
+            <td><img src="https://i.pravatar.cc/150?u=3" class="pt-avatar" alt="avatar"></td>
+            <td class="pt-name">Siti Aminah</td>
+            <td class="pt-phone">(022) 555-0431</td>
+            <td class="pt-star">☆</td>
+          </tr>
+          <tr>
+            <td><img src="https://i.pravatar.cc/150?u=4" class="pt-avatar" alt="avatar"></td>
+            <td class="pt-name">Budi Santoso</td>
+            <td class="pt-phone">(031) 555-0785</td>
+            <td class="pt-star">☆</td>
+          </tr>
+          <tr>
+            <td><img src="https://i.pravatar.cc/150?u=5" class="pt-avatar" alt="avatar"></td>
+            <td class="pt-name">Dewi Lestari</td>
+            <td class="pt-phone">(021) 555-0990</td>
+            <td class="pt-star active">★</td>
+          </tr>
+          <tr>
+            <td><img src="https://i.pravatar.cc/150?u=6" class="pt-avatar" alt="avatar"></td>
+            <td class="pt-name">Fajar Ramadhan</td>
+            <td class="pt-phone">(024) 555-0212</td>
+            <td class="pt-star">☆</td>
+          </tr>
+          <tr>
+            <td><img src="https://i.pravatar.cc/150?u=7" class="pt-avatar" alt="avatar"></td>
+            <td class="pt-name">Rina Wijaya</td>
+            <td class="pt-phone">(031) 555-0654</td>
+            <td class="pt-star">☆</td>
+          </tr>
+          <tr>
+            <td><img src="https://i.pravatar.cc/150?u=8" class="pt-avatar" alt="avatar"></td>
+            <td class="pt-name">Hendra Kusuma</td>
+            <td class="pt-phone">(021) 555-0321</td>
+            <td class="pt-star active">★</td>
+          </tr>
+          <tr>
+            <td><img src="https://i.pravatar.cc/150?u=9" class="pt-avatar" alt="avatar"></td>
+            <td class="pt-name">Maya Indah</td>
+            <td class="pt-phone">(022) 555-0876</td>
+            <td class="pt-star">☆</td>
+          </tr>
+        </tbody>
+      </table>
 
-      <button class="submit-btn">Submit &amp; Transfer</button>
-    </section>
+    </div>
   </main>
 
 </body>
