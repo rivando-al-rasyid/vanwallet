@@ -218,7 +218,6 @@ main {
   margin-top: 76px;
   padding: 32px 40px;
   min-height: calc(100vh - 76px);
-  position: relative;
 }
 
 /* ── PAGE HEADER ── */
@@ -485,13 +484,13 @@ textarea:focus {
 
 /* ── MODAL OVERLAY ── */
 .modal-overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: rgba(11, 19, 42, 0.45);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99;
+  z-index: 999;
   backdrop-filter: blur(2px);
   animation: fadeIn 0.2s ease;
 }
@@ -554,6 +553,7 @@ textarea:focus {
   color: var(--green);
 }
 
+
 .modal-success-sub {
   font-size: 13px;
   color: var(--text-soft);
@@ -583,7 +583,7 @@ textarea:focus {
   box-shadow: 0 6px 18px rgba(41,72,255,0.4);
 }
 
-.modal-btn-again {
+.modal-btn-back {
   display: block;
   width: 100%;
   padding: 15px;
@@ -598,7 +598,7 @@ textarea:focus {
   transition: background 0.2s, border-color 0.2s;
 }
 
-.modal-btn-again:hover {
+.modal-btn-back:hover {
   background: #f0f3ff;
   border-color: var(--primary);
 }
