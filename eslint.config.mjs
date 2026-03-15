@@ -13,7 +13,10 @@ export default defineConfig([
         rules: {
             "html/no-duplicate-class": "error",
             "html/element-newline": "error",
-            "html/indent": ["error", 4]
+            "html/indent": ["error", 4],
+            "html/attrs-newline": "error",
+            "html/no-extra-spacing-attrs": "error",
+
 
 
         }
