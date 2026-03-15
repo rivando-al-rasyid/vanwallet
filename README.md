@@ -1,6 +1,11 @@
 # 💳 VanWallet
 
-> **🇮🇩 Bahasa Indonesia** | [🇬🇧 English](#-english-version)
+<div align="center">
+
+[![🇮🇩 Bahasa Indonesia](https://img.shields.io/badge/🇮🇩-Bahasa_Indonesia-blue?style=for-the-badge)](#-versi-bahasa-indonesia)
+[![🇬🇧 English](https://img.shields.io/badge/🇬🇧-English-lightgrey?style=for-the-badge)](#-english-version)
+
+</div>
 
 ---
 
@@ -25,11 +30,13 @@
 
 ### 🎯 Fitur (Planned & In Progress)
 
-- [ ] 🔐 Login & Registrasi pengguna
+- [x] 🔐 Login & Registrasi pengguna
+- [x] 🔑 Verifikasi PIN & Reset Password
 - [ ] 💰 Cek saldo e-wallet
-- [ ] 📤 Transfer antar pengguna
-- [ ] 📥 Top-up saldo
-- [ ] 🧾 Riwayat transaksi
+- [x] 📤 Transfer antar pengguna
+- [x] 📥 Top-up saldo
+- [x] 🧾 Riwayat transaksi
+- [x] 👤 Edit profil, ganti password & PIN
 - [ ] 📱 Tampilan responsif (mobile & desktop)
 
 ---
@@ -70,13 +77,32 @@ cd vanwallet
 
 ```
 vanwallet/
-├── index.html          # Halaman utama
+├── index.html                   # Halaman utama (landing/redirect)
+├── assets/                      # Aset statis (gambar, ikon, dll)
 ├── css/
-│   └── style.css       # File styling utama
-├── js/
-│   └── main.js         # File logika utama
-└── assets/
-    └── images/         # Gambar dan ikon
+│   ├── color.css                # Variabel warna global
+│   ├── dashboard.css            # Styling halaman dashboard
+│   └── style.css                # Styling umum
+├── pages/
+│   ├── auth/
+│   │   ├── login.html           # Halaman login
+│   │   ├── pin.html             # Halaman verifikasi PIN
+│   │   ├── registrasi.html      # Halaman registrasi
+│   │   └── reset.html           # Halaman reset password
+│   └── dashboards/
+│       ├── modal/               # Komponen modal
+│       ├── index.html           # Dashboard utama
+│       ├── history.html         # Riwayat transaksi
+│       ├── topup.html           # Top-up saldo
+│       ├── transfer.html        # Transfer dana
+│       ├── tranfer-detail.html  # Detail transfer
+│       ├── change-password.html # Ganti password
+│       ├── change-pin.html      # Ganti PIN
+│       └── edit-profile.html    # Edit profil
+├── .gitignore
+├── eslint.config.mjs
+├── package.json
+└── package-lock.json
 ```
 
 ---
@@ -121,11 +147,13 @@ Project ini belum memiliki lisensi resmi. Akan diperbarui seiring perkembangan p
 
 ### 🎯 Features (Planned & In Progress)
 
-- [ ] 🔐 User login & registration
+- [x] 🔐 User login & registration
+- [x] 🔑 PIN verification & password reset
 - [ ] 💰 Wallet balance overview
-- [ ] 📤 Peer-to-peer transfer
-- [ ] 📥 Top-up balance
-- [ ] 🧾 Transaction history
+- [x] 📤 Peer-to-peer transfer
+- [x] 📥 Top-up balance
+- [x] 🧾 Transaction history
+- [x] 👤 Edit profile, change password & PIN
 - [ ] 📱 Fully responsive layout (mobile & desktop)
 
 ---
@@ -166,13 +194,32 @@ cd vanwallet
 
 ```
 vanwallet/
-├── index.html          # Main page
+├── index.html                   # Main entry point
+├── assets/                      # Static assets (images, icons, etc.)
 ├── css/
-│   └── style.css       # Main stylesheet
-├── js/
-│   └── main.js         # Main logic file
-└── assets/
-    └── images/         # Images and icons
+│   ├── color.css                # Global color variables
+│   ├── dashboard.css            # Dashboard page styles
+│   └── style.css                # General styles
+├── pages/
+│   ├── auth/
+│   │   ├── login.html           # Login page
+│   │   ├── pin.html             # PIN verification page
+│   │   ├── registrasi.html      # Registration page
+│   │   └── reset.html           # Password reset page
+│   └── dashboards/
+│       ├── modal/               # Modal components
+│       ├── index.html           # Main dashboard
+│       ├── history.html         # Transaction history
+│       ├── topup.html           # Balance top-up
+│       ├── transfer.html        # Fund transfer
+│       ├── tranfer-detail.html  # Transfer detail
+│       ├── change-password.html # Change password
+│       ├── change-pin.html      # Change PIN
+│       └── edit-profile.html    # Edit profile
+├── .gitignore
+├── eslint.config.mjs
+├── package.json
+└── package-lock.json
 ```
 
 ---
