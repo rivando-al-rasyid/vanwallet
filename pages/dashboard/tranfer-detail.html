@@ -3,13 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>E-Wallet — Find People</title>
+        <title>E-Wallet Dashboard</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
-        <link href="../css/dashboard.css" rel="stylesheet">
+        <link href="../../css/dashboard.css" rel="stylesheet">
     </head>
     <body>
-        Riwayat
-        <!-- HEADER -->
+
         <header>
             <a class="logo" href="#">
                 <div class="logo-icon">
@@ -39,7 +38,7 @@
                 <div class="user-dropdown" id="userDropdown">
                     <div class="user-dropdown-trigger">
                         <div class="avatar">BS</div>
-                        <div class="chevron-down">
+                        <div class="chevron-down" id="userChevron">
                             <svg
                                 width="14"
                                 height="8"
@@ -95,10 +94,9 @@
             </div>
         </header>
 
-        <!-- SIDENAV -->
         <nav class="sidenav">
             <div class="sidenav-items">
-                <a class="nav-item" href="index.html">
+                <a class="nav-item active" href="#">
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
@@ -136,7 +134,7 @@
                     </svg>
                     Dashboard
                 </a>
-                <a class="nav-item active" href="#">
+                <a class="nav-item" href="#">
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
@@ -201,7 +199,7 @@
                     Pengguna
                 </a>
             </div>
-            <div>
+            <div class="nav-logout-wrapper">
                 <div class="nav-logout">
                     <svg
                         viewBox="0 0 24 24"
@@ -223,59 +221,66 @@
             </div>
         </nav>
 
-        <!-- MAIN -->
-        <main>
-
-            <!-- Page Header -->
-            <div class="page-header">
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                >
-                    <path d="M22 2L11 13"/>
-                    <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
-                </svg>
-                <span class="page-title">Transfer Money</span>
-            </div>
-            <div class="stepper">
-                <div class="step step--active">
-                    <div class="step__circle">1</div>
-                    Find People
-                </div>
-                <div class="step__divider"></div>
-                <div class="step">
-                    <div class="step__circle">2</div>
-                    Set Nominal
-                </div>
-                <div class="step__divider"></div>
-                <div class="step">
-                    <div class="step__circle">3</div>
-                    Finish
-                </div>
-            </div>
-
-            <div class="find-people-section">
-
-                <!-- Stepper -->
-
-                <!-- Header Row -->
-                <div class="find-people-header">
-                    <div>
-                        <div class="find-people-title">Find People</div>
-                        <div class="find-people-count">15 Results Found</div>
+        <main class="dashboard">
+            <section>
+                <div class="stepper">
+                    <div class="step">
+                        <div class="step__circle">1</div>
+                        Find People
                     </div>
-                    <div class="search-wrap">
-                        <input
-                            type="text"
-                            class="search-input"
-                            placeholder="Enter Number Or Full Name"
+                    <div class="step__divider"></div>
+                    <div class="step step--active">
+                        <div class="step__circle">2</div>
+                        Set Nominal
+                    </div>
+                    <div class="step__divider"></div>
+                    <div class="step">
+                        <div class="step__circle">3</div>
+                        Finish
+                    </div>
+                </div>
+
+                <p class="section-title">People Information</p>
+                <div class="people-card">
+                    <div class="people-info">
+                        <div class="avatar">G</div>
+                        <div>
+                            <div class="people-name">Ghaluh 1</div>
+                            <div class="people-phone">(239) 555-0108</div>
+                            <span class="badge">
+                                <span class="badge__dot"></span>
+                                Verified
+                            </span>
+                        </div>
+                    </div>
+                    <button
+                        class="star-btn"
+                        title="Add to favorites"
+                        aria-label="Favorite"
+                    >
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                         >
-                        <span class="search-icon-btn">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="field-block">
+                    <p class="field-label">Amount</p>
+                    <p class="field-sub">Type the amount you want to transfer and then press continue to the next steps.</p>
+                    <div class="input-wrap">
+                        <span class="input-icon">
                             <svg
+                                width="15"
+                                height="15"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -283,132 +288,37 @@
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                             >
-                                <circle
-                                    cx="11"
-                                    cy="11"
-                                    r="8"
+                                <rect
+                                    x="2"
+                                    y="5"
+                                    width="20"
+                                    height="14"
+                                    rx="2"
                                 />
-                                <path d="M21 21l-4.35-4.35"/>
+                                <line
+                                    x1="2"
+                                    y1="10"
+                                    x2="22"
+                                    y2="10"
+                                />
                             </svg>
                         </span>
+                        <input
+                            type="number"
+                            placeholder="Enter Nominal Transfer"
+                            min="0"
+                        >
                     </div>
                 </div>
 
-                <!-- People Table -->
-                <table class="people-table">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img
-                                    src="https://i.pravatar.cc/150?u=1"
-                                    class="pt-avatar"
-                                    alt="avatar"
-                                >
-                            </td>
-                            <td class="pt-name">Robert Fox</td>
-                            <td class="pt-phone">Transfer</td>
-                            <td class="tx-amount income">+Rp50.000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img
-                                    src="https://i.pravatar.cc/150?u=2"
-                                    class="pt-avatar"
-                                    alt="avatar"
-                                >
-                            </td>
-                            <td class="pt-name">Floyd Miles</td>
-                            <td class="pt-phone">Send</td>
-                            <td class="tx-amount expense">-Rp50.000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img
-                                    src="https://i.pravatar.cc/150?u=3"
-                                    class="pt-avatar"
-                                    alt="avatar"
-                                >
-                            </td>
-                            <td class="pt-name">Ujang</td>
-                            <td class="pt-phone">Send</td>
-                            <td class="tx-amount expense">-Rp50.000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img
-                                    src="https://i.pravatar.cc/150?u=4"
-                                    class="pt-avatar"
-                                    alt="avatar"
-                                >
-                            </td>
-                            <td class="pt-name">Raulemons</td>
-                            <td class="pt-phone">Transfer</td>
-                            <td class="tx-amount income">+Rp50.000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img
-                                    src="https://i.pravatar.cc/150?u=5"
-                                    class="pt-avatar"
-                                    alt="avatar"
-                                >
-                            </td>
-                            <td class="pt-name">Reiva</td>
-                            <td class="pt-phone">Transfer</td>
-                            <td class="tx-amount income">+Rp50.000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img
-                                    src="https://i.pravatar.cc/150?u=6"
-                                    class="pt-avatar"
-                                    alt="avatar"
-                                >
-                            </td>
-                            <td class="pt-name">Thobie</td>
-                            <td class="pt-phone">Send</td>
-                            <td class="tx-amount expense">-Rp50.000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img
-                                    src="https://i.pravatar.cc/150?u=7"
-                                    class="pt-avatar"
-                                    alt="avatar"
-                                >
-                            </td>
-                            <td class="pt-name">Buzjany</td>
-                            <td class="pt-phone">Transfer</td>
-                            <td class="tx-amount income">+Rp50.000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img
-                                    src="https://i.pravatar.cc/150?u=8"
-                                    class="pt-avatar"
-                                    alt="avatar"
-                                >
-                            </td>
-                            <td class="pt-name">Adisurya</td>
-                            <td class="pt-phone">Send</td>
-                            <td class="tx-amount expense">-Rp50.000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img
-                                    src="https://i.pravatar.cc/150?u=9"
-                                    class="pt-avatar"
-                                    alt="avatar"
-                                >
-                            </td>
-                            <td class="pt-name">Miguelle</td>
-                            <td class="pt-phone">Transfer</td>
-                            <td class="tx-amount income">+Rp50.000</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="field-block">
+                    <p class="field-label">Notes</p>
+                    <p class="field-sub">You can add some notes for this transfer such as payment coffee or something</p>
+                    <textarea placeholder="Enter Some Notes"></textarea>
+                </div>
 
-            </div>
+                <button class="submit-btn">Submit &amp; Transfer</button>
+            </section>
         </main>
 
     </body>

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>E-Wallet Dashboard</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
-        <link href="../css/dashboard.css" rel="stylesheet">
+        <link href="../../css/dashboard.css" rel="stylesheet">
     </head>
     <body>
 
@@ -224,7 +224,7 @@
         </nav>
 
         <!-- MAIN -->
-        <main>
+        <main class="dashboard">
             <div class="page-header">
                 <svg
                     viewBox="0 0 24 24"
@@ -354,13 +354,15 @@
                             class="modal-illustration"
                         >
                     </div>
-                    <h2 class="modal-success-heading">Yeay Transfer <span>Success</span></h2>
-                    <p class="modal-success-sub">Thank you for using this application for your financial</p>
-                    <button class="modal-btn-done">Done</button>
-                    <button class="modal-btn-back">Transfer Again</button>
+                    <h2 class="modal-failed-heading">Oops Transfer <span>Failed</span></h2>
+                    <p class="modal-success-sub">Sorry Theres is an issue for your transfer, try again later !</p>
+                    <button class="modal-btn-done">Try Again</button>
+                    <button class="modal-btn-back">Back To Dashboard</button>
+
                 </div>
             </div>
         </main>
+
 
     </body>
 </html>
