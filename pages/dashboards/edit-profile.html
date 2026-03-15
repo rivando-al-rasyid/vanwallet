@@ -13,7 +13,6 @@
             gap: 24px;
             margin-bottom: 8px;
         }
-
         .pp-preview {
             width: 100px;
             height: 100px;
@@ -25,19 +24,16 @@
             border: 1px solid var(--border);
             flex-shrink: 0;
         }
-
         .pp-preview svg {
             width: 40px;
             height: 40px;
             color: #b0b8d4;
         }
-
         .pp-actions {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
-
         .btn-outline-danger {
             background: transparent;
             border: 1px solid var(--red);
@@ -53,10 +49,8 @@
             gap: 8px;
             transition: all 0.2s;
         }
-
         .btn-outline-danger:hover { background: #fff5f5; }
         .btn-outline-danger svg { width: 16px; height: 16px; flex-shrink: 0; }
-
         .link-action {
             display: block;
             font-size: 14px;
@@ -66,7 +60,6 @@
             margin-top: 8px;
             transition: color 0.2s;
         }
-
         .link-action:hover {
             text-decoration: underline;
             color: var(--primary-dark);
@@ -280,8 +273,10 @@
             </div>
         </nav>
 
+        <!-- MAIN — single column -->
         <main class="dashboard1">
-            <div class="left-col" style="grid-column: 1 / -1;">
+            <div class="left-col">
+
                 <div class="page-header">
                     <svg
                         viewBox="0 0 24 24"
@@ -299,7 +294,7 @@
                     <h1 class="page-title">Profile</h1>
                 </div>
 
-                <section class="transfer-section" style="max-width: 900px;">
+                <section class="transfer-section">
                     <div class="field-block">
                         <label class="field-label">Profile Picture</label>
                         <div class="profile-picture-section">
@@ -423,6 +418,7 @@
 
                     <button class="submit-btn">Submit</button>
                 </section>
+
             </div>
             <!-- /.left-col -->
         </main>
