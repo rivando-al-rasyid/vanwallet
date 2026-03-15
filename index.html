@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zwallet — Smart Financial App</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zwallet — Smart Financial App</title>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+        <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -668,275 +668,362 @@
     @media (max-width: 600px) {
       .footer-inner { grid-template-columns: 1fr; }
     }
-  </style>
-</head>
-<body>
+        </style>
+    </head>
+    <body>
 
-  <!-- NAV -->
-  <nav>
-    <div class="nav-brand">
-      <div class="nav-brand-icon">💳</div>
-      <span>Zwallet</span>
-    </div>
-    <div class="nav-actions">
-      <button class="btn-outline">Sign In</button>
-      <button class="btn-solid">Sign Up</button>
-    </div>
-  </nav>
+        <!-- NAV -->
+        <nav>
+            <div class="nav-brand">
+                <div class="nav-brand-icon">💳</div>
+                <span>Zwallet</span>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-outline">Sign In</button>
+                <button class="btn-solid">Sign Up</button>
+            </div>
+        </nav>
 
-  <!-- ───── SECTION 1: HERO (original) ───── -->
-  <section class="hero">
-    <div class="hero-text">
-      <div class="hero-badge">🚀 New Era of Banking</div>
-      <h1>Smart Way to Your<br><span>Financial Business</span></h1>
-      <p>We bring you a mobile app for banking problems that often waste much of your time — simple, fast, and secure.</p>
-      <button class="btn-cta">Get Started</button>
-      <div class="hero-platforms">
-        <p>Available on</p>
-        <div class="platform-icons">
-          <!-- Google Play -->
-          <svg viewBox="0 0 24 24" fill="#6B7280">
-            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L18.81,13.97C20.21,13.16 20.21,10.83 18.81,10.03L16.81,8.88L14.4,11.29L16.81,15.12M14.4,11.29L4.54,1.43C4.7,1.38 4.87,1.35 5.05,1.35C5.45,1.35 5.84,1.49 6.19,1.69L15.4,7L14.4,11.29M14.4,12.71L15.4,17L6.19,22.31C5.84,22.51 5.45,22.65 5.05,22.65C4.87,22.65 4.7,22.62 4.54,22.57L14.4,12.71Z"/>
-          </svg>
-          <!-- Apple -->
-          <svg viewBox="0 0 24 24" fill="#1A2138">
-            <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.63 14.21,1.45 14.07,0.26C13.05,0.3 11.81,0.94 11.08,1.81C10.42,2.56 9.85,3.77 10,4.94C11.13,5.03 12.28,4.37 13,3.5Z"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <img
-        src="https://img.freepik.com/free-vector/contactless-payment-concept-illustration_114360-2342.jpg"
-        alt="E-Wallet Illustration"
-      >
-    </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <!-- ───── PARTNERS (original) ───── -->
-  <footer class="partners">
-    <div class="partners-inner">
-      <span>Microsoft</span>
-      <span class="italic">Dropbox</span>
-      <span style="font-size:24px;font-weight:800;">H&amp;M</span>
-      <span>airbnb</span>
-      <span class="serif" style="font-size:22px;">Canon</span>
-      <span class="boxed">DELL</span>
-    </div>
-  </footer>
-
-  <!-- ───── SECTION 2: ABOUT (new) ───── -->
-  <section class="about">
-    <div class="about-inner">
-      <div class="about-left">
-        <h2>About The<br>Application</h2>
-        <p>We have some great features from the application and it's totally free to use by all users around the world.</p>
-      </div>
-      <div class="feature-cards">
-
-        <!-- 24/7 Support -->
-        <div class="feature-card">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
-          </div>
-          <h3>24/7 Support</h3>
-          <p>We have 24/7 contact support so you can contact us whenever you want and we will respond it.</p>
-        </div>
-
-        <!-- Data Privacy -->
-        <div class="feature-card">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Data Privacy</h3>
-          <p>We make sure your data is safe in our database and we will encrypt any data you submitted to us.</p>
-        </div>
-
-        <!-- Easy Download -->
-        <div class="feature-card">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          </div>
-          <h3>Easy Download</h3>
-          <p>Zwallet is 100% totally free to use, now available on Google Play Store and App Store.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── SECTION 3: APP FEATURES (new) ───── -->
-  <section class="showcase">
-    <div class="showcase-wave">
-        <div class="showcase-inner">
-
-          <!-- Phone Mockup -->
-          <div class="phone-mockup">
-            <img
-              src="./assets/phone.png"
-              alt="Zwallet App Screenshot"
-            >
-          </div>
-
-          <!-- Text + Features -->
-          <div class="showcase-text">
-            <h2>All The Great<br>Zwallet Features.</h2>
-            <p>We have some great features from the application and it's totally free to use by all users around the world.</p>
-
-            <div class="feature-list">
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        <!-- ───── SECTION 1: HERO (original) ───── -->
+        <section class="hero">
+            <div class="hero-text">
+                <div class="hero-badge">🚀 New Era of Banking</div>
+                <h1>Smart Way to Your<br><span>Financial Business</span></h1>
+                <p>We bring you a mobile app for banking problems that often waste much of your time — simple, fast, and secure.</p>
+                <button class="btn-cta">Get Started</button>
+                <div class="hero-platforms">
+                    <p>Available on</p>
+                    <div class="platform-icons">
+                        <!-- Google Play -->
+                        <svg viewBox="0 0 24 24" fill="#6B7280">
+                            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L18.81,13.97C20.21,13.16 20.21,10.83 18.81,10.03L16.81,8.88L14.4,11.29L16.81,15.12M14.4,11.29L4.54,1.43C4.7,1.38 4.87,1.35 5.05,1.35C5.45,1.35 5.84,1.49 6.19,1.69L15.4,7L14.4,11.29M14.4,12.71L15.4,17L6.19,22.31C5.84,22.51 5.45,22.65 5.05,22.65C4.87,22.65 4.7,22.62 4.54,22.57L14.4,12.71Z"/>
+                        </svg>
+                        <!-- Apple -->
+                        <svg viewBox="0 0 24 24" fill="#1A2138">
+                            <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.63 14.21,1.45 14.07,0.26C13.05,0.3 11.81,0.94 11.08,1.81C10.42,2.56 9.85,3.77 10,4.94C11.13,5.03 12.28,4.37 13,3.5Z"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="feature-item-text">
-                  <h4>Small Fee</h4>
-                  <p>We only charge 5% of every success transaction done in Zwallet app.</p>
-                </div>
-              </div>
+            </div>
+            <div class="hero-visual">
+                <img
+                    src="https://img.freepik.com/free-vector/contactless-payment-concept-illustration_114360-2342.jpg"
+                    alt="E-Wallet Illustration"
+                >
+            </div>
+        </section>
 
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                </div>
-                <div class="feature-item-text">
-                  <h4>Data Secured</h4>
-                  <p>All your data is secured properly in our system and it's encrypted end-to-end.</p>
-                </div>
-              </div>
+        <div class="section-divider"></div>
 
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <!-- ───── PARTNERS (original) ───── -->
+        <footer class="partners">
+            <div class="partners-inner">
+                <span>Microsoft</span>
+                <span class="italic">Dropbox</span>
+                <span style="font-size:24px;font-weight:800;">H&amp;M</span>
+                <span>airbnb</span>
+                <span class="serif" style="font-size:22px;">Canon</span>
+                <span class="boxed">DELL</span>
+            </div>
+        </footer>
+
+        <!-- ───── SECTION 2: ABOUT (new) ───── -->
+        <section class="about">
+            <div class="about-inner">
+                <div class="about-left">
+                    <h2>About The<br>Application</h2>
+                    <p>We have some great features from the application and it's totally free to use by all users around the world.</p>
                 </div>
-                <div class="feature-item-text">
-                  <h4>User Friendly</h4>
-                  <p>Zwallet comes with a modern and sleek design that is not complicated at all.</p>
+                <div class="feature-cards">
+
+                    <!-- 24/7 Support -->
+                    <div class="feature-card">
+                        <div class="icon-wrap">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                            </svg>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>We have 24/7 contact support so you can contact us whenever you want and we will respond it.</p>
+                    </div>
+
+                    <!-- Data Privacy -->
+                    <div class="feature-card">
+                        <div class="icon-wrap">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Data Privacy</h3>
+                        <p>We make sure your data is safe in our database and we will encrypt any data you submitted to us.</p>
+                    </div>
+
+                    <!-- Easy Download -->
+                    <div class="feature-card">
+                        <div class="icon-wrap">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line
+                                    x1="12"
+                                    y1="15"
+                                    x2="12"
+                                    y2="3"
+                                />
+                            </svg>
+                        </div>
+                        <h3>Easy Download</h3>
+                        <p>Zwallet is 100% totally free to use, now available on Google Play Store and App Store.</p>
+                    </div>
+
                 </div>
-              </div>
+            </div>
+        </section>
+
+        <!-- ───── SECTION 3: APP FEATURES (new) ───── -->
+        <section class="showcase">
+            <div class="showcase-wave">
+                <div class="showcase-inner">
+
+                    <!-- Phone Mockup -->
+                    <div class="phone-mockup">
+                        <img
+                            src="./assets/phone.png"
+                            alt="Zwallet App Screenshot"
+                        >
+                    </div>
+
+                    <!-- Text + Features -->
+                    <div class="showcase-text">
+                        <h2>All The Great<br>Zwallet Features.</h2>
+                        <p>We have some great features from the application and it's totally free to use by all users around the world.</p>
+
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle
+                                            cx="12"
+                                            cy="12"
+                                            r="10"
+                                        />
+                                        <path d="M12 8v4l3 3"/>
+                                    </svg>
+                                </div>
+                                <div class="feature-item-text">
+                                    <h4>Small Fee</h4>
+                                    <p>We only charge 5% of every success transaction done in Zwallet app.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <rect
+                                            x="3"
+                                            y="11"
+                                            width="18"
+                                            height="11"
+                                            rx="2"
+                                            ry="2"
+                                        />
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                    </svg>
+                                </div>
+                                <div class="feature-item-text">
+                                    <h4>Data Secured</h4>
+                                    <p>All your data is secured properly in our system and it's encrypted end-to-end.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle
+                                            cx="9"
+                                            cy="7"
+                                            r="4"
+                                        />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                </div>
+                                <div class="feature-item-text">
+                                    <h4>User Friendly</h4>
+                                    <p>Zwallet comes with a modern and sleek design that is not complicated at all.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-cta-white">Get Started</button>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+        </section>
+
+        <!-- ───── SECTION 4: TESTIMONIALS (new) ───── -->
+        <section class="testimonials">
+            <h2>Hear From Our Customer</h2>
+            <p>We always do our best for our customers to stay comfortable using the applications we provide.</p>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+
+                    <div class="testimonial-card">
+                        <img
+                            class="avatar"
+                            src="https://randomuser.me/api/portraits/women/44.jpg"
+                            alt="Sherina Claw"
+                        >
+                        <div class="testimonial-name">Sherina Claw</div>
+                        <div class="stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                            <span class="rating">5.0</span>
+                        </div>
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">I use this app since 2 years ago and this is the best app that I've ever used in my entire life.</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <img
+                            class="avatar"
+                            src="https://randomuser.me/api/portraits/men/32.jpg"
+                            alt="James Bond"
+                        >
+                        <div class="testimonial-name">James Bond</div>
+                        <div class="stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                            <span class="rating">5.0</span>
+                        </div>
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">I use Zwallet to manage all financial needs. It's super easy to use and it's 100% free app.</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <img
+                            class="avatar"
+                            src="https://randomuser.me/api/portraits/men/52.jpg"
+                            alt="Ujang Kayu"
+                        >
+                        <div class="testimonial-name">Ujang Kayu</div>
+                        <div class="stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                            <span class="rating">5.0</span>
+                        </div>
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">Since I'm using this app, I'm not going to move to another similar app. Thank you Zwallet!</p>
+                    </div>
+
+                </div>
+
+                <div class="slider-nav">
+                    <button class="slider-btn prev">←</button>
+                    <div class="slider-dots">
+                        <div class="dot"></div>
+                        <div class="dot inactive"></div>
+                        <div class="dot inactive"></div>
+                        <div class="dot inactive"></div>
+                    </div>
+                    <button class="slider-btn next">→</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───── FOOTER (new) ───── -->
+        <footer class="site-footer">
+            <div class="footer-inner">
+
+                <div>
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+                        <div class="footer-brand-icon">💳</div>
+                        <span class="footer-brand-name">E-Wallet</span>
+                    </div>
+                    <p class="footer-desc">Clarity gives you the blocks and components you need to create a truly professional website.</p>
+                </div>
+
+                <div>
+                    <p class="footer-col-title">Get in Touch</p>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>+62 5637 8882 9901</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span>contact@zwallet.com</span>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="footer-col-title">Social Media</p>
+                    <div class="social-icons">
+                        <button class="social-btn" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.73-8.835L1.254 2.25H8.08l4.264 5.633 5.9-5.633zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </button>
+                        <button class="social-btn" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </button>
+                        <button class="social-btn" aria-label="Instagram">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="white"
+                                stroke-width="2"
+                            >
+                                <rect
+                                    x="2"
+                                    y="2"
+                                    width="20"
+                                    height="20"
+                                    rx="5"
+                                    ry="5"
+                                />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line
+                                    x1="17.5"
+                                    y1="6.5"
+                                    x2="17.51"
+                                    y2="6.5"
+                                />
+                            </svg>
+                        </button>
+                        <button class="social-btn" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="footer-col-title">Newsletter</p>
+                    <div class="newsletter-input-wrap">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <input type="email" placeholder="Enter Your Email">
+                    </div>
+                    <button class="btn-subscribe">Subscribe</button>
+                </div>
+
             </div>
 
-            <button class="btn-cta-white">Get Started</button>
-          </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">© Copyright 2022, All Rights Reserved by ClarityUI</div>
+        </footer>
 
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── SECTION 4: TESTIMONIALS (new) ───── -->
-  <section class="testimonials">
-    <h2>Hear From Our Customer</h2>
-    <p>We always do our best for our customers to stay comfortable using the applications we provide.</p>
-
-    <div class="testimonial-slider">
-      <div class="testimonial-track">
-
-        <div class="testimonial-card">
-          <img class="avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sherina Claw">
-          <div class="testimonial-name">Sherina Claw</div>
-          <div class="stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span class="rating">5.0</span>
-          </div>
-          <div class="quote-icon">"</div>
-          <p class="testimonial-text">I use this app since 2 years ago and this is the best app that I've ever used in my entire life.</p>
-        </div>
-
-        <div class="testimonial-card">
-          <img class="avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Bond">
-          <div class="testimonial-name">James Bond</div>
-          <div class="stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span class="rating">5.0</span>
-          </div>
-          <div class="quote-icon">"</div>
-          <p class="testimonial-text">I use Zwallet to manage all financial needs. It's super easy to use and it's 100% free app.</p>
-        </div>
-
-        <div class="testimonial-card">
-          <img class="avatar" src="https://randomuser.me/api/portraits/men/52.jpg" alt="Ujang Kayu">
-          <div class="testimonial-name">Ujang Kayu</div>
-          <div class="stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span class="rating">5.0</span>
-          </div>
-          <div class="quote-icon">"</div>
-          <p class="testimonial-text">Since I'm using this app, I'm not going to move to another similar app. Thank you Zwallet!</p>
-        </div>
-
-      </div>
-
-      <div class="slider-nav">
-        <button class="slider-btn prev">←</button>
-        <div class="slider-dots">
-          <div class="dot"></div>
-          <div class="dot inactive"></div>
-          <div class="dot inactive"></div>
-          <div class="dot inactive"></div>
-        </div>
-        <button class="slider-btn next">→</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── FOOTER (new) ───── -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-
-      <div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
-          <div class="footer-brand-icon">💳</div>
-          <span class="footer-brand-name">E-Wallet</span>
-        </div>
-        <p class="footer-desc">Clarity gives you the blocks and components you need to create a truly professional website.</p>
-      </div>
-
-      <div>
-        <p class="footer-col-title">Get in Touch</p>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span>+62 5637 8882 9901</span>
-        </div>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <span>contact@zwallet.com</span>
-        </div>
-      </div>
-
-      <div>
-        <p class="footer-col-title">Social Media</p>
-        <div class="social-icons">
-          <button class="social-btn" aria-label="Twitter">
-            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.73-8.835L1.254 2.25H8.08l4.264 5.633 5.9-5.633zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </button>
-          <button class="social-btn" aria-label="Facebook">
-            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </button>
-          <button class="social-btn" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </button>
-          <button class="social-btn" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <div>
-        <p class="footer-col-title">Newsletter</p>
-        <div class="newsletter-input-wrap">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <input type="email" placeholder="Enter Your Email">
-        </div>
-        <button class="btn-subscribe">Subscribe</button>
-      </div>
-
-    </div>
-
-    <div class="footer-divider"></div>
-    <div class="footer-bottom">© Copyright 2022, All Rights Reserved by ClarityUI</div>
-  </footer>
-
-</body>
+    </body>
 </html>
