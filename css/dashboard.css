@@ -1198,7 +1198,9 @@ textarea:focus {
   align-items: center;
   gap: 10px;
 }
-
+.nav-logout {
+  display: none;
+}
 
   header {
     padding: 0 44px;
